@@ -6,14 +6,14 @@ from scrapy import linkextractors
 from scrapy.selector import Selector
 import json
 import re
-from urllib.parse import urljoin
+#from urllib.parse import urljoin
 import datetime
 
 
 class TaobaoSifaSpider(scrapy.Spider):
     name = 'taobao_sifa'
     #allowed_domains = ['www.taobao.com','sf-item.taobao.com','sf.taobao.com']
-    start_urls = ['https://sf.taobao.com/item_list.htm?province=%B1%B1%BE%A9']
+    start_urls = ['https://sf.taobao.com/item_list.htm?province=%B1%B1%BE%A9&sorder=2']
     page=1
     def parse(self, response):
 

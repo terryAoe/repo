@@ -22,6 +22,7 @@ class SifaItem(scrapy.Item):
     _id = Field()#拍卖品编号
     title=Field()#标题
     url = Field()#链接
+    status=Field()#状态
     isSale = Field()#是否拍卖成功
     saleTimes = Field()#拍卖次数
     evaluatePrice=Field()#评估价
